@@ -1,7 +1,7 @@
 pipe-map
 ========
 
-Crazy small utility to pipe in stream and transform each line on the fly
+Crazy small CLI utility to pipe in a stream and transform each line on the fly
 
 Specify a string as parameter "-m" and that expression will be evaluted and returned to standard out.  
 
