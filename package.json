@@ -1,15 +1,15 @@
 {
   "name": "pipe-map",
-  "main" : "index.js",
-  "bin" : "index.js",
+  "main": "index.js",
+  "bin": "index.js",
   "scripts": {
     "test": "node test/test.js"
   },
   "dependencies": {
-    "optimist" : "0.6.0",
-    "split" : "0.2.10"
+    "optimist": "0.6.0",
+    "split": "0.2.10"
   },
-  "version": "0.0.8",
+  "version": "0.0.9",
   "engines": {
     "node": ">=0.8.x"
   }
