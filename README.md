@@ -1,4 +1,4 @@
-pipe-map
+pipe_
 ========
 
 Crazy small CLI utility to pipe in a stream and transform each line on the fly
@@ -7,15 +7,15 @@ Specify a string as parameter "-m" and that expression will be evaluted and retu
 
 ###Installation
 
-  npm install pipe-map -g
+  npm install pipe_ -g
 
 ###Usage Example
 
-  cat phone_numbers.txt | pipe-map -m "'1-'+x"
+  cat phone_numbers.txt | pipe_ -m "'1-'+x"
 
 ###Pass through expression
 
-  pipe-map -m "x"
+  pipe_ -m "x"
 
   technically compiles to
 
@@ -23,7 +23,7 @@ Specify a string as parameter "-m" and that expression will be evaluted and retu
 
 ###Append string expression
 
-  pipe-map -m "x+'foo'"
+  pipe_ -m "x+'foo'"
 
   technically compiles to
 
