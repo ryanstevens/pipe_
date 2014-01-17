@@ -10,6 +10,7 @@ var split = require('split'),
 
 var map = new Function("x", "return " + argv.m);
 
+process.stdin.resume();
 process.stdin.setEncoding('utf8');
 process.stdin.pipe(split()).on('data', function(line) {
   if (line) console.log(map(line));
@@ -18,4 +19,3 @@ process.on('end', function() {
   process.exit();
 });
 
-process.stdin.resume();
