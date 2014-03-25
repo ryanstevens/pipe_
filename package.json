@@ -6,11 +6,12 @@
     "test": "node test/test.js"
   },
   "dependencies": {
+    "JSONSelect": "^0.4.0",
     "optimist": "0.6.0",
     "split": "0.2.10",
     "tap": "^0.4.8"
   },
-  "version": "0.0.13",
+  "version": "0.0.14",
   "engines": {
     "node": ">=0.8.x"
   }

@@ -12,4 +12,16 @@ test('map', function(t) {
   });
 });
 
-
+test('filter', function(t) {
+  var fn = func.create({
+    f : 'x.indexOf("foo")>=0'
+  });
+  
+  fn('bar', function(err, result) {
+    t.ok(err.indexOf("NOT MATCHED") >=0, "Should have an error");
+    fn('foo bar', function(err, result) {
+      t.ok(result);
+      t.end();
+    });
+  });
+});

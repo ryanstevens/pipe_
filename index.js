@@ -5,9 +5,10 @@ var split = require('split'),
   argv = require('optimist')
     .describe('m', 'Function body expression to run.')
     .describe('f', 'This is pretty much grep')
+    .describe('s', 'JSONSelect expression')
     .alias('m', 'map')
     .alias('f', 'filter')
-    .demand('m')
+    .alias('s', 'select')
     .argv,
   func = require('./function').create(argv);
 
